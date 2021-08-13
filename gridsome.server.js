@@ -7,11 +7,11 @@ module.exports = function(api) {
 
     const products = actions.addCollection('ProductList')
     
-    const result = await fetch(`https://api.takeshape.io/project/6cdbcc52-5697-475b-872e-fcb6fd0e00d0/v3/graphql`, {
+    const result = await fetch(`YOUR-ENDPOINT-HERE`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer da3a048ce00f40a3a0964b166c2b185f`,
+        Authorization: `Bearer YOUR-API-KEY-HERE`,
         accept: "application/json",
       },
       body: JSON.stringify({

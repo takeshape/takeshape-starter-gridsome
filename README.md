@@ -1,6 +1,6 @@
 # TakeShape Starter Gridsome
 
-The following is a guide to launching a Gridsome TakeShape project that injects Ecommerce data into your static sites.
+The following is a guide to launching a Gridsome TakeShape project that injects Ecommerce data into your components.
 
 
 ## Instructions
@@ -19,7 +19,7 @@ The following is a guide to launching a Gridsome TakeShape project that injects 
 
 5. Open the project in your favorite IDE or change directories into it with your terminal.
 
-5. Edit `gridsome.server.js` in the `src` directory and replace the text that says `YOUR-ENDPOINT-HERE` with your API Endpoint. Replace the text that says `YOUR-API-KEY-HERE` with your API Key.
+5. Edit `.env.local-example` in the root directory and replace the text that says `YOUR-ENDPOINT-HERE` with your API Endpoint. Replace the text that says `YOUR-API-KEY-HERE` with your API Key. Rename the file to `.env`.
 
 6. Run `npm install` and then `npm run develop` in your terminal.
 

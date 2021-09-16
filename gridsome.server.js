@@ -7,11 +7,11 @@ module.exports = function(api) {
 
     const products = actions.addCollection('ProductList')
     
-    const result = await fetch(`YOUR-ENDPOINT-HERE`, {
+    const result = await fetch(process.env.TAKESHAPE_ENDPOINT, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer YOUR-API-KEY-HERE`,
+        Authorization: `Bearer ${process.env.TAKESHAPE_API_KEY}`,
         accept: "application/json",
       },
       body: JSON.stringify({
